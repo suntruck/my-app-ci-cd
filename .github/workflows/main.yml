@@ -1,0 +1,26 @@
+name: React CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: set node version
+      uses: actions/setup-node@v3
+      with:
+        node-version: '24.14.1'
+        cache: 'npm'
+    
+    - name: install dependencies
+      run: npm ci
+      
+    - name: run tests
+      run: npm test -- --watchAll=false --coverage
+      
+    - name: build production
+      run: npm run build
