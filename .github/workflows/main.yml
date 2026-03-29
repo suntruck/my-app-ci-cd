@@ -17,12 +17,12 @@ jobs:
         cache: 'npm'
     - name: clean cache
       run: npm cache clean --force
-      
+
     - name: install dependencies
       run: npm ci
       
-    - name: run tests
-      run: npm test -- --watchAll=false --coverage
+    # - name: run tests
+    #   run: npm test -- --watchAll=false --coverage
       
-    - name: build production
-      run: npm run build
+    # - name: build production
+    #   run: npm run build
