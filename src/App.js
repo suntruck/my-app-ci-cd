@@ -8,6 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+          The changes will be included automatically using the GitHub Actions CI/CD pipeline to deploy to Vercel.
         </p>
         <a
           className="App-link"
