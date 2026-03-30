@@ -25,8 +25,8 @@ jobs:
     - name: install dependencies
       run: npm install --no-package-lock 
       
-    # - name: run tests
-    #   run: npm test -- --watchAll=false --coverage
+    - name: run tests
+      run: npm test -- --watchAll=false --coverage
       
-    # - name: build production
-    #   run: npm run build
+    - name: build production
+      run: npm run build
