@@ -9,6 +9,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
           The changes will be included automatically using the GitHub Actions CI/CD pipeline to deploy to Vercel.
+          New channge again.
         </p>
         <a
           className="App-link"
