@@ -23,7 +23,7 @@ jobs:
     - name: check npm version
       run: npm -v
     - name: install dependencies
-      run: npm install --no-package-lock 
+      run: npm ci
       
     - name: run tests
       run: npm test -- --watchAll=false --coverage
